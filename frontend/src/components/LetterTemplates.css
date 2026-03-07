@@ -1,0 +1,89 @@
+.letter-templates {
+  padding: 1rem 0;
+}
+
+.templates-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.card-header-custom {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+}
+
+.employee-select-card {
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.template-card {
+  border: 1px solid #e9ecef;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.template-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+.edit-btn {
+  border-radius: 8px;
+}
+
+.variables-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.variable-badge {
+  border-radius: 12px;
+  background: #e7f1ff !important;
+  color: #0d6efd;
+  font-weight: 600;
+  padding: 0.35rem 0.6rem;
+}
+
+.template-preview {
+  border: 1px dashed #d6d9e0;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: #f9fafc;
+}
+
+.preview-content {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #334155;
+  line-height: 1.4;
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.preview-line {
+  font-size: 0.95rem;
+  padding: 2px 0;
+}
+
+.generate-btn {
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(25, 135, 84, 0.2);
+  border-radius: 10px;
+}
+
+.letter-templates .alert {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .template-card {
+    border-radius: 12px;
+  }
+}
+

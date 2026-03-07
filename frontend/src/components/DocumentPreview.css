@@ -1,0 +1,40 @@
+.document-preview-modal .modal-content {
+  border-radius: 14px;
+  overflow: hidden;
+   max-height: 70vh;
+}
+
+.document-preview-modal .preview-container {
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 0.5rem;
+  background: #f8fafc;
+}
+
+.document-preview-modal .preview-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.document-preview-modal .preview-content {
+  background: #fff;
+  border: 1px dashed #d6d9e0;
+  border-radius: 10px;
+  padding: 0.5rem;
+  overflow: auto;
+  min-height: 10px;
+  overflow: auto;
+  max-height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.document-preview-modal .preview-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+

@@ -1,0 +1,263 @@
+/* ExpiryDashboard.css */
+
+.expiry-dashboard {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header Gradient */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Statistics Cards */
+.stats-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.stats-card .card-body {
+  padding: 1.5rem;
+}
+
+/* Clickable Card Styles */
+.clickable-card {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.clickable-card:active {
+  transform: translateY(-3px);
+}
+
+/* Active Filter Card */
+.active-filter-card {
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.4) !important;
+  border: 3px solid #667eea !important;
+}
+
+.active-filter-card.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.6), 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Different colors for different filter types */
+.active-filter-card:has(.text-danger) {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.3) !important;
+}
+
+.active-filter-card:has(.text-warning) {
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.3) !important;
+}
+
+.active-filter-card:has(.text-primary) {
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.3) !important;
+}
+
+.stats-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.9;
+}
+
+.stats-icon.bg-danger {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.stats-icon.bg-warning {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.stats-icon.bg-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Feature Cards */
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+/* Expiry Table */
+.expiry-table {
+  margin-bottom: 0;
+}
+
+.expiry-table thead {
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+}
+
+.expiry-table thead th {
+  border: none;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #000 !important;
+  background: transparent !important;
+}
+
+.expiry-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.expiry-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.expiry-table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Removed colored row backgrounds */
+.table-danger,
+.table-warning {
+  background-color: transparent !important;
+}
+
+/* Spinner Animation */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Badges */
+.badge {
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+}
+
+/* Alert Styling */
+.alert {
+  border-left: 4px solid;
+  border-radius: 8px;
+}
+
+.alert-danger {
+  border-left-color: #dc3545;
+  background-color: #ffe6e6;
+}
+
+.alert-warning {
+  border-left-color: #ffc107;
+  background-color: #fff3cd;
+}
+
+/* Filter Badge Styling */
+.card-header .badge {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Clear Filter Button */
+.btn-outline-secondary {
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-card {
+    margin-bottom: 1rem;
+  }
+
+  .feature-card {
+    margin-bottom: 1rem;
+  }
+
+  .expiry-table {
+    font-size: 0.85rem;
+  }
+
+  .stats-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .expiry-table thead th {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .expiry-table tbody td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .clickable-card {
+    margin-bottom: 1rem;
+  }
+
+  .active-filter-card {
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.4) !important;
+  }
+}

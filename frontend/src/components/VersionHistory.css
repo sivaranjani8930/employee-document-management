@@ -1,0 +1,38 @@
+.version-history .card {
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.version-history .table thead {
+  background: #f8fafc;
+}
+
+.version-history .table th,
+.version-history .table td {
+  vertical-align: middle;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-valid {
+  background: #e8f7ef;
+  color: #198754;
+}
+
+.status-warning {
+  background: #fff4e6;
+  color: #d97a00;
+}
+
+.status-danger {
+  background: #fdecef;
+  color: #dc3545;
+}
+

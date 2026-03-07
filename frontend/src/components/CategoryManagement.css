@@ -1,0 +1,25 @@
+.category-management {
+  padding: 20px;
+}
+
+.category-card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header Consistency */
+.category-card table thead th {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000 !important;
+  padding: 1rem;
+}
+
+.action-btn {
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.action-btn:hover {
+  background-color: #f8f9fa;
+}

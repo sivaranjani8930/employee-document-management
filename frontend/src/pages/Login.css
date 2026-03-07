@@ -1,0 +1,141 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 40%, #062c73 100%);
+  padding: 2rem 1rem;
+}
+
+.login-wrapper {
+  max-width: 520px;
+  width: 100%;
+}
+
+.login-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.login-title {
+  font-weight: 700;
+}
+
+.login-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(6, 66, 155, 0.879);
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon .input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.input-with-icon .form-control {
+  padding-left: 42px;
+}
+
+.login-btn {
+  font-weight: 700;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 26px rgba(6, 66, 155, 0.81);
+}
+
+@media (max-width: 576px) {
+  .login-card {
+    border-radius: 12px;
+  }
+
+  .login-icon {
+    width: 64px;
+    height: 64px;
+  }
+}
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-wrapper {
+  max-width: 450px;
+  width: 100%;
+}
+
+.login-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(16, 9, 56, 0.214);
+  overflow: hidden;
+}
+
+.login-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #4364f6 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+}
+
+.login-title {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  z-index: 10;
+}
+
+.input-with-icon .form-control {
+  padding-left: 45px;
+}
+
+.login-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #5568d3 0%, #653a91 100%);
+}
+
