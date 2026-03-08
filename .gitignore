@@ -1,0 +1,6 @@
+# ignore node modules and build outputs
+node_modules
+build
+.env
+frontend/node_modules
+frontend/build
